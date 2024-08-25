@@ -14,7 +14,7 @@ public class Primitive_Data_Types {
 
         //Non-Primitive Data Types
         String st = "Hello World";
-        int arr[] = {1, 2, 3, 4, 5};
+        int [] arr = {1, 2, 3, 4, 5};
 
         //Displaying the Values in DataTypes.
         System.out.println ("Byte: " +a);
