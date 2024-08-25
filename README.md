@@ -2,6 +2,13 @@
 
 Welcome to the **Java Programs & Concepts** repository! This repository is dedicated to providing daily Java and advanced Java programs, along with explanations of core Java concepts. Whether you're a beginner or an experienced developer, this repository will serve as a valuable resource for mastering Java.
 
+
+<div align="center">
+  <a href="https://github.com/iamchaitanya7/JBK.Basics">
+    <img src="https://github.com/iamchaitanya7/JBK.Basics/blob/master/Java%20img.png" alt="Logo" width="900" height="500">
+  </a>
+</div>
+
 ## Table of Contents
 
 - [Introduction](#introduction)
