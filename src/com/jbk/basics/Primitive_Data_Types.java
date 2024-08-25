@@ -27,8 +27,5 @@ public class Primitive_Data_Types {
         System.out.println ("Boolean: " +h);
         System.out.println ("String: " +st);
         System.out.println ("Array: " +arr[1]);
-
-
     }
-
 }
