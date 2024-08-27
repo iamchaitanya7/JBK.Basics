@@ -5,7 +5,7 @@ Welcome to the **Java Programs & Concepts** repository! This repository is dedic
 
 <div align="center">
   <a href="https://github.com/iamchaitanya7/JBK.Basics">
-    <img src="https://github.com/iamchaitanya7/JBK.Basics/blob/master/Java%20img.png" alt="Logo" width="900" height="500">
+    <img src="https://github.com/iamchaitanya7/JBK.Basics/blob/master/javaIMG.png" alt="Logo" width="900" height="500">
   </a>
 </div>
 
