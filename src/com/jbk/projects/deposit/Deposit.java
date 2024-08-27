@@ -6,7 +6,7 @@ public class Deposit {
 
     public Deposit (Account acc, int accNo, String name, double amount) {
         //Validating the Initial Account Details Whether Match or Not then Only Depositing the Money into Account.
-        if (accNo == acc.getAccNo ( ) && name.equals (acc.getName ( ))) {
+        if (accNo == acc.getAccNo () && name.equals (acc.getName ())) {
             if (amount > 0) {
                 Account.setBalance (Account.getBalance ( ) + amount);
                 System.out.println ("Deposited Amount: " + amount);
