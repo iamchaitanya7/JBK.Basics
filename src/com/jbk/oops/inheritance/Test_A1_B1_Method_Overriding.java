@@ -1,7 +1,5 @@
 package com.jbk.oops.inheritance;
 
-import com.jbk.oops.Main;
-
 public class Test_A1_B1_Method_Overriding {
     //Demonstrating Method Overriding of [toString()] Method of [Object Class] which is Overrided by [Child Class toString()] Method.
     public static void main (String[] args) {
