@@ -1,5 +1,6 @@
 package com.jbk.basics;
 
+
 public class Reverse_String {
     public static void main(String[] args) {
         System.out.println("02-AUGUST-TASK-1-BASICS");
@@ -15,5 +16,6 @@ public class Reverse_String {
         for (int i = s1.length()-1 ; i >= 0 ;  i--){
             System.out.print(s1.charAt(i));   //Just add println() to get each Reversed Character on New Line...!
         }
+
     }
 }
