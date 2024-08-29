@@ -42,7 +42,7 @@ public class Generate_Reverse_No_Str_Arr {
         int[] resArr = new int[arr.length];
         int j = 0;
         for (int i = arr.length - 1; i >= 0; i--) {
-            //System.out.println (arr[i] + " ");            //Can Also be used to display each reversed array element individually.
+            //System.out.println (arr[i] + " ");           //Can Also be used to display each reversed array element individually.
             resArr[j] = arr[i];                            //Creation of New Array that stores the Reversed Array.
             j++;
         }
