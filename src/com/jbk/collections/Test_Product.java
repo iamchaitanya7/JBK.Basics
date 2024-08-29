@@ -15,6 +15,7 @@ public class Test_Product {
         Product p4 = new Product (104, "Pendrive", 1500);
         Product p5 = new Product (105, "Laptop", 50000);
 
+        //Array List Creation from Collections Framework.
         ArrayList<Product> productArrayList = new ArrayList<> ( );
         productArrayList.add (p1);
         productArrayList.add (p2);
