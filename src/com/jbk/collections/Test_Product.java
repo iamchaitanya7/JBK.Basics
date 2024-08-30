@@ -60,12 +60,18 @@ public class Test_Product {
         }
         obj.lineSeparator ( );
 
-        //Using the For Loop to Display Data
+        //Using the For Loop to Display Data.
         System.out.println ("Displaying the Data using Simple For Loop");
         obj.lineSeparator ( );
         for (int i = 0; i < productArrayList.size ( ); i++) {
             System.out.println (productArrayList.get (i));
         }
+        obj.lineSeparator ( );
+
+        //Using the For-Each Loop to Display Data Supported by Java-8.
+        System.out.println ("Displaying the Data using For-Each Loop");
+        obj.lineSeparator ( );
+        productArrayList.forEach (product -> System.out.println (product));
         obj.lineSeparator ( );
     }
 }
