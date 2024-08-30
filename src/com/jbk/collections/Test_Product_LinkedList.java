@@ -16,24 +16,24 @@ public class Test_Product_LinkedList {
         Product p4 = new Product (104, "Pendrive", 1500);
         Product p5 = new Product (105, "Laptop", 50000);
 
-        //linked List Creation from Collections Framework.
+        //Linked List Creation from Collections Framework.
         LinkedList<Product> productLinkedList = new LinkedList<> ( );
-        //linkedList.add() Used to Remove the Specified Object from the ArrayList
+        //linkedList.add() Used to Addd the Specified Object to the LinkedList
         productLinkedList.add (p1);
         productLinkedList.add (p2);
         productLinkedList.add (p3);
         productLinkedList.add (p4);
         productLinkedList.add (p5);
 
-        //linkedList.remove() Used to Remove the Specified Object from the ArrayList
+        //linkedList.remove() Used to Remove the Specified Object from the LinkedList
         productLinkedList.remove (p5);
 
-        //linkedList.clear() Used to Clear the Complete Objects from the ArrayList
+        //linkedList.clear() Used to Clear the Complete Objects from the LinkedList
         //productLinkedList.clear ();
 
-        //productLinkedList.add (p5);
-        //productLinkedList.add (p5);
-        //We Can Add multiple Duplicate objects into a single Arraylist and Similarly we can also remove() this multiple Duplicate Objects.
+        productLinkedList.add (p5);
+        productLinkedList.add (p5);
+        //We Can Add multiple Duplicate objects into a single LinkedList, and Similarly we can also remove() this multiple Duplicate Objects.
 
         obj.lineSeparator ( );
         //Using For Loop to Display the Data.
