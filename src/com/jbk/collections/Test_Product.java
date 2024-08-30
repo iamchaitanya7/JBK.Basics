@@ -1,6 +1,7 @@
 package com.jbk.collections;
 
 import java.util.ArrayList;
+import java.util.ListIterator;
 
 public class Test_Product {
     void lineSeparator () {
@@ -22,10 +23,48 @@ public class Test_Product {
         productArrayList.add (p3);
         productArrayList.add (p4);
         productArrayList.add (p5);
+//      productArrayList.add (p5);
+//      productArrayList.add (p5);
+//      We Can Add multiple Duplicate objects into a single Arraylist.
 
+        obj.lineSeparator ( );
+        //Using For Loop to Display the Data.
+        System.out.println ("Displaying Data Using For Loop");
         obj.lineSeparator ( );
         for (Product p : productArrayList) {
             System.out.println (p);
+        }
+        obj.lineSeparator ( );
+
+        //Displays the size of ArrayList.
+        System.out.println ("Size of Arraylist: " + productArrayList.size ( ));
+        obj.lineSeparator ( );
+
+        //Using ListIterator to Display the Data.
+        System.out.println ("Displaying Data Using ListIterator");
+        obj.lineSeparator ( );
+        ListIterator<Product> listItr = productArrayList.listIterator ( );
+        while (listItr.hasNext ( )) {
+            Product t = listItr.next ( );
+            System.out.println (t);
+        }
+        obj.lineSeparator ( );
+
+        //Using Iterator to Display the Data.
+        System.out.println ("Displaying Data Using Iterator");
+        obj.lineSeparator ( );
+        ListIterator<Product> Itr = productArrayList.listIterator ( );
+        while (Itr.hasNext ( )) {
+            Product t = Itr.next ( );
+            System.out.println (t);
+        }
+        obj.lineSeparator ( );
+
+        //Using the For Loop to Display Data
+        System.out.println ("Displaying the Data using Simple For Loop");
+        obj.lineSeparator ( );
+        for (int i = 0; i < productArrayList.size ( ); i++) {
+            System.out.println (productArrayList.get (i));
         }
         obj.lineSeparator ( );
     }
