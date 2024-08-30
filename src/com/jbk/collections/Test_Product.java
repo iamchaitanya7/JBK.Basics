@@ -18,14 +18,18 @@ public class Test_Product {
 
         //Array List Creation from Collections Framework.
         ArrayList<Product> productArrayList = new ArrayList<> ( );
+        //arrayList.add() Used to Remove the Specified Object from the ArrayList
         productArrayList.add (p1);
         productArrayList.add (p2);
         productArrayList.add (p3);
         productArrayList.add (p4);
         productArrayList.add (p5);
-//      productArrayList.add (p5);
-//      productArrayList.add (p5);
-//      We Can Add multiple Duplicate objects into a single Arraylist.
+
+        //Used to Remove the Specified Object from the ArrayList
+        productArrayList.remove (p5);
+        //productArrayList.add (p5);
+        //productArrayList.add (p5);
+        //We Can Add multiple Duplicate objects into a single Arraylist and Similarly we can also remove() this multiple Duplicate Objects.
 
         obj.lineSeparator ( );
         //Using For Loop to Display the Data.
