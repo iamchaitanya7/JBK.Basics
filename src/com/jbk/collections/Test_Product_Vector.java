@@ -1,5 +1,6 @@
 package com.jbk.collections;
 
+import java.util.Iterator;
 import java.util.ListIterator;
 import java.util.Vector;
 
@@ -61,7 +62,7 @@ public class Test_Product_Vector {
         //Using Iterator to Display the Data.
         System.out.println ("Displaying Data Using Iterator");
         obj.lineSeparator ( );
-        ListIterator<Product> Itr = productVector.listIterator ( );
+        Iterator<Product> Itr = productVector.iterator ( );
         while (Itr.hasNext ( )) {
             Product t = Itr.next ( );
             System.out.println (t);
