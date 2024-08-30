@@ -17,24 +17,28 @@ public class Test_Product_HashSet {
         Product p4 = new Product (104, "Pendrive", 1500);
         Product p5 = new Product (105, "Laptop", 50000);
 
-        //HashSet Creation from Collections Framework.
+        Product p6 = new Product (106, "Hello", 1000);
+
+        // *HashSet Creation from Collections Framework.
         HashSet<Product> productHashSet = new HashSet<> ( );
-        //HashSet.add() Used to Remove the Specified Object from the HashSet
+
+        // *HashSet.add() Used to Add the Specified Object to the HashSet.
         productHashSet.add (p1);
         productHashSet.add (p2);
         productHashSet.add (p3);
         productHashSet.add (p4);
         productHashSet.add (p5);
 
-        //linkedList.remove() Used to Remove the Specified Object from the ArrayList
+        // *hashSet.remove() Used to Remove the Specified Object from the HashSet.
         productHashSet.remove (p5);
 
-        //linkedList.clear() Used to Clear the Complete Objects from the ArrayList
-        //productLinkedList.clear ();
+        // *hashSet.clear() Used to Clear the All Objects from the HashSet.
+        // *productLinkedList.clear ();
 
         productHashSet.add (p5);
         productHashSet.add (p5);
-        //We Can Add multiple Duplicate objects into a single Arraylist and Similarly we can also remove() this multiple Duplicate Objects.
+        // *We Cannot Add multiple Duplicate objects into a Single HashSets as it Stores only Unique Values.
+
 
         obj.lineSeparator ( );
         //Using For Loop to Display the Data.
