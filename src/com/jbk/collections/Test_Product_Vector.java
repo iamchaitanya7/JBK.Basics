@@ -17,24 +17,24 @@ public class Test_Product_Vector {
         Product p4 = new Product (104, "Pendrive", 1500);
         Product p5 = new Product (105, "Laptop", 50000);
 
-        //linked List Creation from Collections Framework.
+        //Vector Creation from Collections Framework.
         Vector<Product> productVector = new Vector<> ( );
-        //linkedList.add() Used to Remove the Specified Object from the ArrayList
+        //vector.add() Used to Add the Specified Object to the Vector.
         productVector.add (p1);
         productVector.add (p2);
         productVector.add (p3);
         productVector.add (p4);
         productVector.add (p5);
 
-        //linkedList.remove() Used to Remove the Specified Object from the ArrayList
+        //vector.remove() Used to Remove the Specified Object from the Vector.
         productVector.remove (p5);
 
-        //linkedList.clear() Used to Clear the Complete Objects from the ArrayList
-        //productLinkedList.clear ();
+        //vector.clear() Used to Clear the Complete Objects from the Vector.
+        //productVector.clear ();
 
         productVector.add (p5);
         productVector.add (p5);
-        //We Can Add multiple Duplicate objects into a single Arraylist and Similarly we can also remove() this multiple Duplicate Objects.
+        //We Can Add multiple Duplicate objects into a single Vector, and Similarly we can also remove() this multiple Duplicate Objects.
 
         obj.lineSeparator ( );
         //Using For Loop to Display the Data.
