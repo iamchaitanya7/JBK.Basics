@@ -25,8 +25,12 @@ public class Test_Product {
         productArrayList.add (p4);
         productArrayList.add (p5);
 
-        //Used to Remove the Specified Object from the ArrayList
+        //arrayList.remove() Used to Remove the Specified Object from the ArrayList
         productArrayList.remove (p5);
+
+        //arrayList.clear() Used to Clear the Complete Objects from the ArrayList
+        //productArrayList.clear ();
+
         //productArrayList.add (p5);
         //productArrayList.add (p5);
         //We Can Add multiple Duplicate objects into a single Arraylist and Similarly we can also remove() this multiple Duplicate Objects.
