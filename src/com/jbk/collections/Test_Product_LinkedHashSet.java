@@ -2,7 +2,6 @@ package com.jbk.collections;
 
 import java.util.Iterator;
 import java.util.LinkedHashSet;
-import java.util.ListIterator;
 
 public class Test_Product_LinkedHashSet {
     void lineSeparator () {
@@ -10,7 +9,7 @@ public class Test_Product_LinkedHashSet {
     }
 
     public static void main (String[] args) {
-        Test_Product obj = new Test_Product ( );
+        Test_Product_LinkedHashSet obj = new Test_Product_LinkedHashSet ( );
         Product p1 = new Product (101, "Notebook", 500);
         Product p2 = new Product (102, "College Bag", 2500);
         Product p3 = new Product (103, "Pen", 1000);
