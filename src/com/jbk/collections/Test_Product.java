@@ -1,6 +1,7 @@
 package com.jbk.collections;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.ListIterator;
 
 public class Test_Product {
@@ -18,22 +19,22 @@ public class Test_Product {
 
         //Array List Creation from Collections Framework.
         ArrayList<Product> productArrayList = new ArrayList<> ( );
-        //arrayList.add() Used to Remove the Specified Object from the ArrayList
+        //arrayList.add() Used to Add the Specified Object to the ArrayList.
         productArrayList.add (p1);
         productArrayList.add (p2);
         productArrayList.add (p3);
         productArrayList.add (p4);
         productArrayList.add (p5);
 
-        //arrayList.remove() Used to Remove the Specified Object from the ArrayList
+        //arrayList.remove() Used to Remove the Specified Object from the ArrayList.
         productArrayList.remove (p5);
 
-        //arrayList.clear() Used to Clear the Complete Objects from the ArrayList
+        //arrayList.clear() Used to Clear the Complete Objects from the ArrayList.
         //productArrayList.clear ();
 
-        //productArrayList.add (p5);
-        //productArrayList.add (p5);
-        //We Can Add multiple Duplicate objects into a single Arraylist and Similarly we can also remove() this multiple Duplicate Objects.
+        productArrayList.add (p5);
+        productArrayList.add (p5);
+        //We Can Add multiple Duplicate objects into a Single Arraylist, and Similarly we can also remove() this multiple Duplicate Objects.
 
         obj.lineSeparator ( );
         //Using For Loop to Display the Data.
@@ -61,7 +62,7 @@ public class Test_Product {
         //Using Iterator to Display the Data.
         System.out.println ("Displaying Data Using Iterator");
         obj.lineSeparator ( );
-        ListIterator<Product> Itr = productArrayList.listIterator ( );
+        Iterator<Product> Itr = productArrayList.iterator ( );
         while (Itr.hasNext ( )) {
             Product t = Itr.next ( );
             System.out.println (t);
@@ -76,7 +77,7 @@ public class Test_Product {
         }
         obj.lineSeparator ( );
 
-        //Using the For-Each Loop to Display Data Supported by Java-8.
+        //Using the For-Each Loop to Display Data, Supported by Java-8.
         System.out.println ("Displaying the Data using For-Each Loop");
         obj.lineSeparator ( );
         productArrayList.forEach (product -> System.out.println (product));
