@@ -9,7 +9,7 @@ public class Test_Product_LinkedList {
     }
 
     public static void main (String[] args) {
-        Test_Product obj = new Test_Product ( );
+        Test_Product_LinkedList obj = new Test_Product_LinkedList ( );
         Product p1 = new Product (101, "Notebook", 500);
         Product p2 = new Product (102, "College Bag", 2500);
         Product p3 = new Product (103, "Pen", 1000);
