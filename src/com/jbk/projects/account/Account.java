@@ -3,11 +3,13 @@ package com.jbk.projects.account;
 public class Account {
     private int accNo;
     private String name;
+    private final String pin;
     private static double balance;
 
-    public Account(int accNo, String name, double initialBalance) {
+    public Account (int accNo, String name, String pin, double initialBalance) {
         this.accNo = accNo;
         this.name = name;
+        this.pin = pin;
         Account.balance = initialBalance;
     }
 
