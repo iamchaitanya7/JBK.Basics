@@ -3,7 +3,7 @@ package com.jbk.projects.account;
 public class Account {
     private int accNo;
     private String name;
-    private final String pin;
+    private String pin;
     private static double balance;
 
     public Account (int accNo, String name, String pin, double initialBalance) {
@@ -28,6 +28,14 @@ public class Account {
 
     public void setName (String name) {
         this.name = name;
+    }
+
+    public String getPin () {
+        return pin;
+    }
+
+    public void setPin (String pin) {
+        this.pin = pin;
     }
 
     public static double getBalance() {
