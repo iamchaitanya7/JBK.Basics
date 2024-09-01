@@ -11,6 +11,7 @@ public class Test_Product_ArrayList {
 
     public static void main (String[] args) {
         Test_Product_ArrayList obj = new Test_Product_ArrayList ( );
+
         Product p1 = new Product (101, "Notebook", 500);
         Product p2 = new Product (102, "College Bag", 2500);
         Product p3 = new Product (103, "Pen", 1000);
@@ -19,6 +20,7 @@ public class Test_Product_ArrayList {
 
         //Array List Creation from Collections Framework.
         ArrayList<Product> productArrayList = new ArrayList<> ( );
+
         //arrayList.add() Used to Add the Specified Object to the ArrayList.
         productArrayList.add (p1);
         productArrayList.add (p2);
