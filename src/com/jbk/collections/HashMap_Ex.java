@@ -34,7 +34,7 @@ public class HashMap_Ex {
         }
         line.separator ( );
 
-        /*Method to Create a Collection of String which will Store the (Values) from the associated HashMap,
+        /*Method to Create a (Collection) of (String) which will Store the (Values) from the associated HashMap,
         Display the (Values) using the for Loop. */
         Collection<String> valuesCollection = hashMap.values ( );
         System.out.println ("Values from HashMap: ");
@@ -44,6 +44,9 @@ public class HashMap_Ex {
         }
         line.separator ( );
 
+
+        /*Method to Create a (Set) of (Integer, String) which will Store the (Keys, Values) from the associated HashMap and,
+        Display the (Keys, Values) using the for Loop. */
         System.out.println ("Entries from HashMap: ");
         Set<Map.Entry<Integer, String>> entries = hashMap.entrySet ( );
         line.separator ( );
