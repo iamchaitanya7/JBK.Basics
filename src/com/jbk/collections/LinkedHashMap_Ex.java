@@ -60,5 +60,18 @@ public class LinkedHashMap_Ex {
         line.separator ( );
         linkedHashMap.forEach ((key, values) -> System.out.println (key + " " + values));
         line.separator ( );
+
+        //Display the (Keys) using the for-each Loop which are associated with the LinkedHashMap.
+        System.out.println ("Keys from LinkedHashMap Using For-Each: ");
+        line.separator ( );
+        linkedHashMap.forEach ((key, values) -> System.out.println (key));
+        line.separator ( );
+
+        //Display the (Keys, Values) using the for-each Loop which are associated with the LinkedHashMap.
+        System.out.println ("Values from LinkedHashMap Using For-Each: ");
+        line.separator ( );
+        linkedHashMap.forEach ((key, values) -> System.out.println (values));
+        line.separator ( );
+
     }
 }
