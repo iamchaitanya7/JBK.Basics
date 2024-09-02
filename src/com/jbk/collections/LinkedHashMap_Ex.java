@@ -18,6 +18,10 @@ public class LinkedHashMap_Ex {
         linkedHashMap.put (105, "Sanket");
 
         line.separator ( );
+        System.out.println ("Size of LinkedHashMap: " + linkedHashMap.size ( ));         //Displaying the (Value) of Specific (Key).
+        line.separator ( );
+
+        line.separator ( );
         System.out.println ("Value of Specified Key: " + linkedHashMap.get (101));         //Displaying the (Value) of Specific (Key).
         line.separator ( );
 
