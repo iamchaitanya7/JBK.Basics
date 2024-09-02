@@ -1,7 +1,6 @@
 package com.jbk.collections;
 
-import java.util.HashMap;
-import java.util.Set;
+import java.util.*;
 
 public class HashMap_Ex {
     void separator () {
@@ -19,20 +18,39 @@ public class HashMap_Ex {
         hashMap.put (105, "Sanket");
 
         line.separator ( );
-        System.out.println (hashMap.get (101));         //Displaying the (Value) of Specific (Key).
+        System.out.println ("Value of Specified Key: " + hashMap.get (101));         //Displaying the (Value) of Specific (Key).
         line.separator ( );
 
-        System.out.println (hashMap.keySet ( ));         //Displaying all the (Keys) from the associated HashMap.
+        System.out.println ("Direct Keys from HashMap: " + hashMap.keySet ( ));         //Displaying all the (Keys) from the associated HashMap.
         line.separator ( );
 
 
         //We Can Also Create a (Set) of Integer Type which will Store the (Keys) from the associated HashMap.
         Set<Integer> keySet = hashMap.keySet ( );
+        System.out.println ("Keys from HashMap");
+        line.separator ( );
         for (Integer i : keySet) {
             System.out.println (i);         //Using a For Loop to Display all the Keys Captured in the (keySet).
         }
         line.separator ( );
 
+        /*Method to Create a Collection of String which will Store the (Values) from the associated HashMap,
+        Display the (Values) using the for Loop. */
+        Collection<String> valuesCollection = hashMap.values ( );
+        System.out.println ("Values from HashMap: ");
+        line.separator ( );
+        for (String str : valuesCollection) {
+            System.out.println (str);
+        }
+        line.separator ( );
+
+        System.out.println ("Entries from HashMap: ");
+        Set<Map.Entry<Integer, String>> entries = hashMap.entrySet ( );
+        line.separator ( );
+        for (Map.Entry<Integer, String> entry : entries) {
+            System.out.println (entry.getKey ( ) + " " + entry.getValue ( ));
+        }
+        line.separator ( );
 
 
 
