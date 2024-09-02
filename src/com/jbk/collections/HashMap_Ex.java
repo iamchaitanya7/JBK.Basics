@@ -18,6 +18,10 @@ public class HashMap_Ex {
         hashMap.put (105, "Sanket");
 
         line.separator ( );
+        System.out.println ("Size of HashMap: " + hashMap.size ( ));         //Displaying the (Value) of Specific (Key).
+        line.separator ( );
+
+        line.separator ( );
         System.out.println ("Value of Specified Key: " + hashMap.get (101));         //Displaying the (Value) of Specific (Key).
         line.separator ( );
 
