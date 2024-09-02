@@ -55,9 +55,11 @@ public class HashMap_Ex {
         }
         line.separator ( );
 
-
-
-
+        //Display the (Keys, Values) using the for-each Loop which are associated with the HashMap.
+        System.out.println ("Entries from HashMap Using For-Each: ");
+        line.separator ( );
+        hashMap.forEach ((key, values) -> System.out.println (key + " " + values));
+        line.separator ( );
 
 
     }
