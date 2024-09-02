@@ -78,5 +78,8 @@ public class HashTable_Ex {
         line.separator ( );
 
 
+        //HashTable Doesn't Maintain Insertion Order Sequence.
+
+
     }
 }
