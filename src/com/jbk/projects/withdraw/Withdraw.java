@@ -1,23 +1,33 @@
 package com.jbk.projects.withdraw;
 import com.jbk.projects.account.Account;
+import com.jbk.projects.account.InsufficientFunds;
+import com.jbk.projects.account.InvalidAmount;
+import com.jbk.projects.account.InvalidUsernamePin;
 
 public class Withdraw {
-    public Withdraw(Account acc, int accNo, String name, double amount) {
-        //Validating the Initial Account Details Whether Match or Not then Only Withdrawing the Money from Account.
-        if (accNo == acc.getAccNo() && name.equals(acc.getName())) {
+    public Withdraw (Account acc, String name, String pin, double amount) throws InsufficientFunds, InvalidAmount, InvalidUsernamePin {
+        //Validating the Initial Account Details(Acc_No, Name) Whether Match or Not then Only Withdrawing the Money from Account.
+        if (pin == acc.getPin ( ) && name.equals (acc.getName ( ))) {
+
+            //Validating the Account Details(Username, Pin) Whether Match or Not then Only Withdrawing the Money from Account.
+            //acc = Account.findAccount(name, pin);
+            //if (acc != null) {
             if (amount > 0 && amount <= Account.getBalance()) {
                 Account.setBalance(Account.getBalance() - amount);
                 System.out.println("Withdrawn Amount: " + amount);
                 System.out.println("Updated Account Balance: " + Account.getBalance());
             }
             else if (amount > Account.getBalance()) {
-                System.out.println("Insufficient balance in Account.");
+                throw new InsufficientFunds ("Insufficient Funds in Account!");
+                //System.out.println("Insufficient balance in Account.");
             }
             else {
-                System.out.println("Withdraw amount must be greater than zero.");
+                throw new InvalidAmount ("Invalid Amount! Enter Correct Amount");
+                //System.out.println("Withdraw amount must be greater than zero.");
             }
         } else {
-            System.out.println("Account details do not match. Withdrawal failed.");
+            throw new InvalidUsernamePin ("Invalid Username and Pin! Account details do not match. Withdrawal failed.");
+            //System.out.println("Invalid Username or Pin! Account details do not match. Withdrawal failed.");
         }
     }
 }
