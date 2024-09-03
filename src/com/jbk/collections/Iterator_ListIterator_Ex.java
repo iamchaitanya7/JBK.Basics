@@ -34,11 +34,9 @@ public class Iterator_ListIterator_Ex {
             System.out.println (stringListIterator.next ( ));
         }
         line.separator ( );
-
         System.out.println ("Previous Iteration using ListIterator");
-        ListIterator<String> stringListIterator2 = stringArrayList.listIterator ( );
-        while (stringListIterator2.hasPrevious ( )) {
-            System.out.println (stringListIterator2.previous ( ));
+        while (stringListIterator.hasPrevious ( )) {
+            System.out.println (stringListIterator.previous ( ));
         }
         line.separator ( );
     }
