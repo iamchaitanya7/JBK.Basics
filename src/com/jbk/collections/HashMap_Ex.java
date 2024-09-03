@@ -18,7 +18,7 @@ public class HashMap_Ex {
         hashMap.put (105, "Sanket");
 
         line.separator ( );
-        System.out.println ("Size of HashMap: " + hashMap.size ( ));         //Displaying the (Value) of Specific (Key).
+        System.out.println ("Size of HashMap: " + hashMap.size ( ));         //Displaying the (Size) of HashMap.
         line.separator ( );
 
         line.separator ( );
