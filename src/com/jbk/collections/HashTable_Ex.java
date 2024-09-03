@@ -18,7 +18,7 @@ public class HashTable_Ex {
         hashtable.put (105, "Sanket");
 
         line.separator ( );
-        System.out.println ("Size of HashTable: " + hashtable.size ( ));         //Displaying the (Value) of Specific (Key).
+        System.out.println ("Size of HashTable: " + hashtable.size ( ));         //Displaying the (Size) of HashTable.
         line.separator ( );
 
         line.separator ( );
