@@ -1,123 +1,25 @@
 package com.jbk.collections;
 
+
 import java.util.*;
+import java.util.Collections;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
-public class CollectionsEx extends ArrayList {
-    @Override
-    public int size () {
-        return 0;
-    }
+public class CollectionsEx {
+    public static void main (String[] args) {
+        List<Integer> integerArrayList = new ArrayList<> ( );
+        integerArrayList.add (20);
+        integerArrayList.add (10);
+        integerArrayList.add (50);
+        integerArrayList.add (30);
+        integerArrayList.add (40);
 
-    @Override
-    public boolean isEmpty () {
-        return false;
-    }
+        System.out.println (integerArrayList);
 
-    @Override
-    public boolean contains (Object o) {
-        return false;
-    }
+        Collections.sort (integerArrayList);
 
-    @Override
-    public Iterator iterator () {
-        return null;
-    }
-
-    @Override
-    public Object[] toArray () {
-        return new Object[0];
-    }
-
-    @Override
-    public boolean add (Object o) {
-        return false;
-    }
-
-    @Override
-    public boolean remove (Object o) {
-        return false;
-    }
-
-    @Override
-    public boolean addAll (Collection c) {
-        return false;
-    }
-
-    @Override
-    public boolean addAll (int index, Collection c) {
-        return false;
-    }
-
-    @Override
-    public void clear () {
-
-    }
-
-    @Override
-    public Object get (int index) {
-        return null;
-    }
-
-    @Override
-    public Object set (int index, Object element) {
-        return null;
-    }
-
-    @Override
-    public void add (int index, Object element) {
-
-    }
-
-    @Override
-    public Object remove (int index) {
-        return null;
-    }
-
-    @Override
-    public int indexOf (Object o) {
-        return 0;
-    }
-
-    @Override
-    public int lastIndexOf (Object o) {
-        return 0;
-    }
-
-    @Override
-    public ListIterator listIterator () {
-        return null;
-    }
-
-    @Override
-    public ListIterator listIterator (int index) {
-        return null;
-    }
-
-    @Override
-    public List subList (int fromIndex, int toIndex) {
-        return Collections.emptyList ( );
-    }
-
-    @Override
-    public boolean retainAll (Collection c) {
-        return false;
-    }
-
-    @Override
-    public boolean removeAll (Collection c) {
-        return false;
-    }
-
-    @Override
-    public boolean containsAll (Collection c) {
-        return false;
-    }
-
-    @Override
-    public Object[] toArray (Object[] a) {
-        return new Object[0];
+        System.out.println (integerArrayList);
     }
 }
