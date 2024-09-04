@@ -7,12 +7,12 @@ import com.jbk.projects.account.InvalidUsernamePin;
 public class Withdraw {
     public Withdraw (Account acc, String name, String pin, double amount) throws InsufficientFunds, InvalidAmount, InvalidUsernamePin {
         //Validating the Initial Account Details(Acc_No, Name) Whether Match or Not then Only Withdrawing the Money from Account.
-        if (pin == acc.getPin ( ) && name.equals (acc.getName ( ))) {
+        if (pin == acc.getPin ( ) && name.equals (acc.getName ( )) && amount > 0) {
 
             //Validating the Account Details(Username, Pin) Whether Match or Not then Only Withdrawing the Money from Account.
             //acc = Account.findAccount(name, pin);
             //if (acc != null) {
-            if (amount > 0 && amount <= Account.getBalance()) {
+            if (amount <= Account.getBalance ( )) {
                 Account.setBalance(Account.getBalance() - amount);
                 System.out.println("Withdrawn Amount: " + amount);
                 System.out.println("Updated Account Balance: " + Account.getBalance());
@@ -26,7 +26,7 @@ public class Withdraw {
                 //System.out.println("Withdraw amount must be greater than zero.");
             }
         } else {
-            throw new InvalidUsernamePin ("Invalid Username and Pin! Account details do not match. Withdrawal failed.");
+            throw new InvalidUsernamePin ("Invalid Username or Pin and Amount! Withdrawal failed.");
             //System.out.println("Invalid Username or Pin! Account details do not match. Withdrawal failed.");
         }
     }
