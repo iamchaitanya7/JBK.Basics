@@ -18,7 +18,7 @@ public class Withdraw {
                 System.out.println("Updated Account Balance: " + Account.getBalance());
             }
             else if (amount > Account.getBalance()) {
-                throw new InsufficientFunds ("Insufficient Funds in Account!");
+                throw new InsufficientFunds ("Insufficient Funds in Account! Withdrawal failed.");
                 //System.out.println("Insufficient balance in Account.");
             }
             else {
