@@ -1,13 +1,8 @@
 package com.jbk.collections;
 
-
 import java.util.*;
-import java.util.Collections;
-import java.util.function.Consumer;
-import java.util.function.Predicate;
-import java.util.stream.Stream;
 
-public class CollectionsEx {
+public class CollectionsClass_Ex {
     public static void main (String[] args) {
         List<Integer> integerArrayList = new ArrayList<> ( );
         integerArrayList.add (20);
