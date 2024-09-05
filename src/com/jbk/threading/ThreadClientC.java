@@ -13,5 +13,7 @@ public class ThreadClientC {
         t1.join ( );
         System.out.println ("State of the Thread : " + t1.getState ( ));   //TERMINATED State of the Thread.
 
+        t1.setDaemon (true);         //Setting the NormalThread as Daemon Thread.
+
     }
 }
