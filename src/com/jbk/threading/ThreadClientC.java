@@ -7,11 +7,11 @@ public class ThreadClientC {
         ThreadJobC jobC = new ThreadJobC ( );
 
         Thread t1 = new Thread (jobC);
-        System.out.println (t1.getState ( ));    //NEW State of the Thread
+        System.out.println ("State of the Thread : " + t1.getState ( ));    //NEW State of the Thread
         t1.start ( );
-        System.out.println (t1.getState ( ));    //RUNNABLE State of the Thread.
+        System.out.println ("State of the Thread : " + t1.getState ( ));    //RUNNABLE State of the Thread.
         t1.join ( );
-        System.out.println (t1.getState ( ));   //TERMINATED State of the Thread.
+        System.out.println ("State of the Thread : " + t1.getState ( ));   //TERMINATED State of the Thread.
 
     }
 }
