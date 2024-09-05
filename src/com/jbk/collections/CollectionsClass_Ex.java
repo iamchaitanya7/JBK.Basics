@@ -11,8 +11,6 @@ public class CollectionsClass_Ex {
         integerArrayList.add (30);
         integerArrayList.add (40);
 
-        System.out.println (integerArrayList);
-
         Collections.sort (integerArrayList);
 
         System.out.println (integerArrayList);
