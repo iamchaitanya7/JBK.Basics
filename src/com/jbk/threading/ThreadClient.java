@@ -26,6 +26,7 @@ public class ThreadClient {
         t2.join ( );
         t3.join ( );
 
+        System.out.println (job.count);
         System.out.println ("Exit from Main....");
 
     }
