@@ -10,6 +10,8 @@ public class ThreadClientB {
         t1.setName ("First Thread");
         t2.setName ("Second Thread");
 
+        t1.setPriority (10);
+
         t1.start ( );
         t2.start ( );
 
