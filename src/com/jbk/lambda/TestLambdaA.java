@@ -3,6 +3,7 @@ package com.jbk.lambda;
 public class TestLambdaA {
     public static void main (String[] args) {
         LambdaA lambdaA;        //reference of Interface (LambdaA)
+        LambdaA lambdaA1;
 
         //Creating (Lambda Expression) for creating An Lambda Styled Method.
         /*
@@ -12,8 +13,11 @@ public class TestLambdaA {
         The −> can be verbalized as “becomes” or “goes to.”
         */
         lambdaA = (a, b) -> (a + b);
+        lambdaA1 = (a, b) -> (a - b);
 
         int resultA = lambdaA.m1 (10, 20);
-        System.out.println ( );
+        System.out.println ("Result of Lambda Expression Based Method (Addition): " + resultA);
+        System.out.println ("Result of Lambda Expression Based Method (Substraction): " + lambdaA1.m1 (20, 10));
+
     }
 }
