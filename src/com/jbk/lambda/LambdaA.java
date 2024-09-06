@@ -6,5 +6,4 @@ public interface LambdaA {
 
     //Cannot Overload the methods or have multiple methods in the functional interface.
     //int m1(int a, int b, int c);
-
 }
