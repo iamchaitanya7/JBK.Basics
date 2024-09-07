@@ -24,7 +24,7 @@ public class LambdaBiFunctionUC {
         obj2.run ( );
 
 
-        //Also try a functional interface with no parameters but has a return type.
+        //Also try a functional interface with (No Parameters but has a Return[int, double, string, long, etc]) type.
 
     }
 }
