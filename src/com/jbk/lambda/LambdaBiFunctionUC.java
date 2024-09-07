@@ -10,10 +10,19 @@ public class LambdaBiFunctionUC {
         obj = (a, b) -> (a + b);
         System.out.println ("Addition using Predefined function.BiFunction Interface: " + obj.apply (10, 20));
 
-        //Trying to create Lambda Expression for a (Void Method without Parameters).
+        //Trying to create Lambda Expression for a (Void Method without Parameters) using the Runnable Interface (Run) Method.
         Runnable obj1;
         obj1 = () -> System.out.println ("Hello");
         obj1.run ( );
+
+        //Trying to implement the Lambda Expression (Block of Code) using the Runnable Interface (Run) Method
+        Runnable obj2 = () -> {
+            for (int i = 0; i <= 10; i++) {
+                System.out.println (i);
+            }
+        };
+        obj2.run ( );
+
 
         //Also try a functional interface with no parameters but has a return type.
 
