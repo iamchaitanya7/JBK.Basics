@@ -23,8 +23,12 @@ public class LambdaBiFunctionUC {
         };
         obj2.run ( );
 
-
-        //Also try a functional interface with (No Parameters but has a Return[int, double, string, long, etc]) type.
+        //Functional Interface with (No Parameters but has a Return[int, double, string, long, etc]) type.
+        ReturnTypeNoParameterInterface obj3 = () -> {
+            int c = 10 + 20;
+            return c;
+        };
+        System.out.println ("Addition is: " + obj3);
 
     }
 }
