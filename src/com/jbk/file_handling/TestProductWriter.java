@@ -20,7 +20,7 @@ public class TestProductWriter {
         productArrayList.add (product4);
         productArrayList.add (product5);
 
-        ObjectOutputStream outputStream = new ObjectOutputStream (new FileOutputStream (new File ("D:\\A.Workspace's\\JBK\\JBK.Basics\\src\\com\\jbk\\file_handling\\ObjectFile.txt")));
+        ObjectOutputStream outputStream = new ObjectOutputStream (new FileOutputStream (new File ("D:\\A.Workspace's\\JBK\\JBK.Basics\\src\\com\\jbk\\file_handling\\targetObjectFile.txt")));
         outputStream.writeObject (productArrayList);
         outputStream.close ( );
     }
