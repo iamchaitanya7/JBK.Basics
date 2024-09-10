@@ -5,7 +5,7 @@ import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 
-public class TestProduct {
+public class TestProductWriter {
     public static void main (String[] args) throws Exception {
         Product product1 = new Product (101, "Pen", 900);
         Product product2 = new Product (102, "Laptop", 10000);
