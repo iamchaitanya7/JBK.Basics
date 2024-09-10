@@ -25,5 +25,7 @@ public class BufferedReaderEx {
             System.out.print (ch);
             //Thread.currentThread ().sleep(1000);      Can be added to check each character traversal.
         }
+        Thread.sleep (1000);      //Can be added to check each character traversal.
+
     }
 }
