@@ -9,7 +9,7 @@ public class TestAreaInterface {
         System.out.println ("Area of Circle: " + obj.calculateArea (5));
 
         //WAP to calculate the Area of Square
-        AreaInterface obj1 = (side) -> Math.pow (side, 2);
+        AreaInterface obj1 = (side) -> Math.pow (side, 2);         // or (size * size);
         System.out.println ("Area of Square: " + obj1.calculateArea (10));
     }
 }
