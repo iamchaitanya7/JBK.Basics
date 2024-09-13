@@ -21,7 +21,7 @@
       <console name="MySQL-CC" type="STANDARD" schema="registration" session="Main"><![CDATA[select * from userdata;]]></console>
     </connection>
     <connection id="bc3a7c9d-3132-4922-92bf-e7671f94a7d1">
-      <console name="1196" type="STANDARD" schema="db1196" session="Main"><![CDATA[select * from product;]]></console>
+      <console name="1196" type="STANDARD" schema="db1196" session="Main"><![CDATA[select * from db1196.customer;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
