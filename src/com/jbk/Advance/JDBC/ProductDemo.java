@@ -31,6 +31,15 @@ public class ProductDemo {
         return price;
     }
 
+    @Override
+    public String toString () {
+        return "ProductDemo{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                '}';
+    }
+
     public void setPrice (double price) {
         this.price = price;
     }
