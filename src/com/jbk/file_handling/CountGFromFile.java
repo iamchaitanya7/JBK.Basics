@@ -32,6 +32,7 @@ public class CountGFromFile {
         }
         System.out.print ("Counter: " + counter);*/
 
+        //WAP to count no of G's in the file sequence.
 
         int totalGs = 0;
 
@@ -40,7 +41,6 @@ public class CountGFromFile {
             // Count occurrences of 'g' (case-insensitive)
             totalGs += line.toLowerCase ( ).chars ( ).filter (ch -> ch == 'g').count ( );
         }
-
         System.out.println ("Total occurrences of 'g': " + totalGs);
 
     }
