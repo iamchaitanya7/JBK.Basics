@@ -73,7 +73,7 @@ public class crudJDBC {
             preparedStatement.setString (3, empDept);
             preparedStatement.setDouble (4, salary);
             int rowsAffected = preparedStatement.executeUpdate ( );
-            System.out.println ("| Employee added successfully. Rows affected: ➤ " + rowsAffected);
+            System.out.println ("Employee added successfully. Rows affected: " + rowsAffected);
         } catch (SQLException e) {
             System.out.println ("SQL Error: " + e.getMessage ( ));
         }
