@@ -54,14 +54,14 @@ public class crudJDBC {
     // Method to insert an employee
     public static void insertEmployee () {
         Scanner scanner = new Scanner (System.in);
-        System.out.println ("| Enter Employee ID: ➤");
+        System.out.println ("Enter Employee ID: ");
         int id = scanner.nextInt ( );
         scanner.nextLine ( ); // Consume the newline character
-        System.out.println ("| Enter Employee Name: ➤");
+        System.out.println ("Enter Employee Name: ");
         String name = scanner.nextLine ( );
-        System.out.println ("| Enter Employee Department: ➤");
+        System.out.println ("Enter Employee Department: ");
         String empDept = scanner.nextLine ( );
-        System.out.println ("| Enter Employee Salary: ➤");
+        System.out.println ("Enter Employee Salary: ");
         double salary = scanner.nextDouble ( );
 
 
