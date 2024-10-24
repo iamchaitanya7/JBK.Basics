@@ -98,6 +98,15 @@ public class doctorJDBC {
         }
     }
 
+    public void alterTable (String dbname, String tableName, String newColumnName, String columnDefinition) throws SQLException {
+        String sql = "ALTER TABLE " + tableName + " ADD " + newColumnName + " " + columnDefinition;
+        Connection connection = DriverManager.getConnection (URL + dbname, USERNAME, PASSWORD);
+        PreparedStatement preparedStatement = connection.prepareStatement (sql);
+        preparedStatement.executeUpdate ( );
+        System.out.println ("Added column " + newColumnName + " to table " + tableName);
+    }
+
+
 
 
 }
