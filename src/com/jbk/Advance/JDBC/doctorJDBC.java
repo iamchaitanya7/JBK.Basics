@@ -81,4 +81,23 @@ public class doctorJDBC {
     }
 
 
+    public void updateRecord (String dbname, String tableName, int docId, String newName, String newSpecialty) throws SQLException {
+        String sql = "UPDATE " + tableName + " SET doc_name = ?, doc_speciality = ? WHERE doc_id = ?";
+        Connection connection = DriverManager.getConnection (URL + dbname, USERNAME, PASSWORD);
+        PreparedStatement preparedStatement = connection.prepareStatement (sql);
+        preparedStatement.setString (1, newName);
+        preparedStatement.setString (2, newSpecialty);
+        preparedStatement.setInt (3, docId);
+
+        int rowsAffected = preparedStatement.executeUpdate ( );
+
+        if (rowsAffected > 0) {
+            System.out.println ("Updated record with ID: " + docId);
+        } else {
+            System.out.println ("No record found with ID: " + docId);
+        }
+    }
+
+
+
 }
