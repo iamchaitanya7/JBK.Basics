@@ -80,7 +80,25 @@ public class doctorJDBC {
         }
     }
 
+    //Displaying Specific Doctor Records using Specific Doctor_ID
+    public void showSpecificRecord (String dbname, String tableName, int docId) throws SQLException {
+        String sql = "SELECT * FROM " + tableName + " WHERE doc_id = ?";
+        Connection connection = DriverManager.getConnection (URL + dbname, USERNAME, PASSWORD);
+        PreparedStatement preparedStatement = connection.prepareStatement (sql);
+        preparedStatement.setInt (1, docId);
+        ResultSet rs = preparedStatement.executeQuery ( );
 
+        if (rs.next ( )) {
+            System.out.println ("ID: " + rs.getInt ("doc_id") +
+                    ", Name: " + rs.getString ("doc_name") +
+                    ", Speciality: " + rs.getString ("doc_speciality") +
+                    ", Created At: " + rs.getTimestamp ("created_at"));
+        } else {
+            System.out.println ("No record found with ID: " + docId);
+        }
+    }
+
+    //Updating Specific Doctor Records using Specific Doctor_ID.
     public void updateRecord (String dbname, String tableName, String newName, String newSpecialty, int docId) throws SQLException {
         String sql = "UPDATE " + tableName + " SET doc_name = ?, doc_speciality = ? WHERE doc_id = ?";
         Connection connection = DriverManager.getConnection (URL + dbname, USERNAME, PASSWORD);
@@ -98,6 +116,7 @@ public class doctorJDBC {
         }
     }
 
+    //Altering Doctor Table using newColumnName and columnDefinition.
     public void alterTable (String dbname, String tableName, String newColumnName, String columnDefinition) throws SQLException {
         String sql = "ALTER TABLE " + tableName + " ADD " + newColumnName + " " + columnDefinition;
         Connection connection = DriverManager.getConnection (URL + dbname, USERNAME, PASSWORD);
@@ -106,6 +125,7 @@ public class doctorJDBC {
         System.out.println ("Added column " + newColumnName + " to table " + tableName);
     }
 
+    //Truncating Doctor Table Records but keeping the structure intact.
     public void truncateTable (String dbname, String tableName) throws SQLException {
         String sql = "TRUNCATE TABLE " + tableName;
         Connection connection = DriverManager.getConnection (URL + dbname, USERNAME, PASSWORD);
@@ -114,6 +134,7 @@ public class doctorJDBC {
         System.out.println ("Table " + tableName + " has been truncated.");
     }
 
+    //Deleting All Doctor Records but does not reset the auto-increment counter.
     public void deleteAllRecords (String dbname, String tableName) throws SQLException {
         String sql = "DELETE FROM " + tableName;
         Connection connection = DriverManager.getConnection (URL + dbname, USERNAME, PASSWORD);
@@ -122,6 +143,7 @@ public class doctorJDBC {
         System.out.println ("Deleted " + rowsAffected + " record(s) from " + tableName);
     }
 
+    //Deleting Specific Doctor Records using Specific Doctor_ID.
     public void deleteSpecificRecord (String dbname, String tableName, int docId) throws SQLException {
         String sql = "DELETE FROM " + tableName + " WHERE doc_id = ?";
         Connection connection = DriverManager.getConnection (URL + dbname, USERNAME, PASSWORD);
@@ -135,10 +157,4 @@ public class doctorJDBC {
             System.out.println ("No record found with ID: " + docId);
         }
     }
-
-
-
-
-
-
 }
