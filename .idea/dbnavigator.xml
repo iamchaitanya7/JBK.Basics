@@ -18,7 +18,7 @@
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="0a817223-ffc4-457d-a27a-6652e9520018">
       <console name="Connection" type="STANDARD" schema="registration" session="Main" />
-      <console name="MySQL-CC" type="STANDARD" schema="db951" session="Main"><![CDATA[select * from db951.students;]]></console>
+      <console name="MySQL-CC" type="STANDARD" schema="db951" session="Main"><![CDATA[select * from doctorjbk.doctorrecords;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -26,7 +26,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files>
-      <object connection-id="0a817223-ffc4-457d-a27a-6652e9520018" object-ref="consoles/Connection" />
+      <object connection-id="0a817223-ffc4-457d-a27a-6652e9520018" object-ref="consoles/MySQL-CC" />
     </open-files>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
