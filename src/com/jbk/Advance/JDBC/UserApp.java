@@ -19,7 +19,6 @@ public class UserApp {
         }
     }
 
-    //Creating Table into Database.
     void createTable (String dbname, String tablename) {
         String createTableSQL = "CREATE TABLE " + tablename + " ("
                 + "user_id INT NOT NULL AUTO_INCREMENT, "
