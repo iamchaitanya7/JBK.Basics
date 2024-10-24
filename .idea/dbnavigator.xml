@@ -18,7 +18,7 @@
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="0a817223-ffc4-457d-a27a-6652e9520018">
       <console name="Connection" type="STANDARD" schema="registration" session="Main" />
-      <console name="MySQL-CC" type="STANDARD" schema="db951" session="Main"><![CDATA[select * from doctorjbk.doctorrecords;]]></console>
+      <console name="MySQL-CC" type="STANDARD" schema="db951" session="Main"><![CDATA[DROP TABLE users;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
