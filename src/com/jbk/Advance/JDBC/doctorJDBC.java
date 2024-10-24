@@ -81,7 +81,7 @@ public class doctorJDBC {
     }
 
 
-    public void updateRecord (String dbname, String tableName, int docId, String newName, String newSpecialty) throws SQLException {
+    public void updateRecord (String dbname, String tableName, String newName, String newSpecialty, int docId) throws SQLException {
         String sql = "UPDATE " + tableName + " SET doc_name = ?, doc_speciality = ? WHERE doc_id = ?";
         Connection connection = DriverManager.getConnection (URL + dbname, USERNAME, PASSWORD);
         PreparedStatement preparedStatement = connection.prepareStatement (sql);
@@ -120,6 +120,20 @@ public class doctorJDBC {
         PreparedStatement preparedStatement = connection.prepareStatement (sql);
         int rowsAffected = preparedStatement.executeUpdate ( );
         System.out.println ("Deleted " + rowsAffected + " record(s) from " + tableName);
+    }
+
+    public void deleteSpecificRecord (String dbname, String tableName, int docId) throws SQLException {
+        String sql = "DELETE FROM " + tableName + " WHERE doc_id = ?";
+        Connection connection = DriverManager.getConnection (URL + dbname, USERNAME, PASSWORD);
+        PreparedStatement preparedStatement = connection.prepareStatement (sql);
+        preparedStatement.setInt (1, docId);
+        int rowsAffected = preparedStatement.executeUpdate ( );
+
+        if (rowsAffected > 0) {
+            System.out.println ("Deleted record with ID: " + docId + " from " + tableName);
+        } else {
+            System.out.println ("No record found with ID: " + docId);
+        }
     }
 
 
