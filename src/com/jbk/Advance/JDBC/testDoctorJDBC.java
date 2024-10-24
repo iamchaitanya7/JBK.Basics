@@ -52,23 +52,33 @@ public class testDoctorJDBC {
                     break;
 
                 case 6:
-                    doc.showData (dbName, tableName);
+                    System.out.println ("Enter Doctor's New Name: ");
+                    String newName = sc.next ( );
+                    System.out.println ("Enter Doctor's New Speciality: ");
+                    String newSpecialty = sc.next ( );
+                    System.out.println ("Enter Doctor's ID: ");
+                    int docId = sc.nextInt ( );
+                    doc.updateRecord (dbName, tableName, newName, newSpecialty, docId);
                     break;
 
                 case 7:
-                    doc.showData (dbName, tableName);
+                    String newColumnName = "doc_Address";
+                    String columnDefinition = "VARCHAR(100)";
+                    doc.alterTable (dbName, tableName, newColumnName, columnDefinition);
                     break;
 
                 case 8:
-                    doc.showData (dbName, tableName);
+                    doc.truncateTable (dbName, tableName);
                     break;
 
                 case 9:
-                    doc.showData (dbName, tableName);
+                    doc.deleteAllRecords (dbName, tableName);
                     break;
 
                 case 10:
-                    doc.showData (dbName, tableName);
+                    System.out.println ("Enter Doc_Id: ");
+                    int doc_id = sc.nextInt ( );
+                    doc.deleteSpecificRecord (dbName, tableName, doc_id);
                     break;
 
                 case 11:
