@@ -8,7 +8,7 @@ public class testDoctorJDBC {
         Scanner sc = new Scanner (System.in);
         doctorJDBC doc = new doctorJDBC ( );
         String dbName, tableName, docName, docSpecialty;
-        dbName = "doctorJBK";
+        dbName = "doctorJBK1";
         tableName = "doctorRecords";
 
         while (true) {
@@ -31,14 +31,17 @@ public class testDoctorJDBC {
 
             int choice = sc.nextInt ( );
             switch (choice) {
+                //Create New Database.
                 case 1:
                     doc.createDatabase (dbName);
                     break;
 
+                //Create New Table.
                 case 2:
                     doc.createTable (dbName, tableName);
                     break;
 
+                //Insert Values into Table.
                 case 3:
                     System.out.print ("Enter Doctor's name: ");
                     docName = sc.next ( );
@@ -47,10 +50,19 @@ public class testDoctorJDBC {
                     doc.insertValues (dbName, tableName, docName, docSpecialty);
                     break;
 
-                case 5:
+                //Display All Records from table.
+                case 4:
                     doc.showValues (dbName, tableName);
                     break;
 
+                //Display Specific Records from the table.
+                case 5:
+                    System.out.println ("Enter Doctor's ID to View: ");
+                    int doccId = sc.nextInt ( );
+                    doc.showSpecificRecord (dbName, tableName, doccId);
+                    break;
+
+                //Updating Specific Records from the table.
                 case 6:
                     System.out.println ("Enter Doctor's New Name: ");
                     String newName = sc.next ( );
@@ -61,26 +73,31 @@ public class testDoctorJDBC {
                     doc.updateRecord (dbName, tableName, newName, newSpecialty, docId);
                     break;
 
+                //Altering the table.
                 case 7:
                     String newColumnName = "doc_Address";
                     String columnDefinition = "VARCHAR(100)";
                     doc.alterTable (dbName, tableName, newColumnName, columnDefinition);
                     break;
 
+                //Truncating the table.
                 case 8:
                     doc.truncateTable (dbName, tableName);
                     break;
 
+                //Deleting all records from the table.
                 case 9:
                     doc.deleteAllRecords (dbName, tableName);
                     break;
 
+                //Deleting a Specific Record from the table.
                 case 10:
                     System.out.println ("Enter Doc_Id: ");
                     int doc_id = sc.nextInt ( );
                     doc.deleteSpecificRecord (dbName, tableName, doc_id);
                     break;
 
+                //Exiting from the displayMenu() and Closing connections
                 case 11:
                     System.out.println ("Exiting...");
                     sc.close ( );
