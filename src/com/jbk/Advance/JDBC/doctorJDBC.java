@@ -106,6 +106,24 @@ public class doctorJDBC {
         System.out.println ("Added column " + newColumnName + " to table " + tableName);
     }
 
+    public void truncateTable (String dbname, String tableName) throws SQLException {
+        String sql = "TRUNCATE TABLE " + tableName;
+        Connection connection = DriverManager.getConnection (URL + dbname, USERNAME, PASSWORD);
+        PreparedStatement preparedStatement = connection.prepareStatement (sql);
+        preparedStatement.executeUpdate ( );
+        System.out.println ("Table " + tableName + " has been truncated.");
+    }
+
+    public void deleteAllRecords (String dbname, String tableName) throws SQLException {
+        String sql = "DELETE FROM " + tableName;
+        Connection connection = DriverManager.getConnection (URL + dbname, USERNAME, PASSWORD);
+        PreparedStatement preparedStatement = connection.prepareStatement (sql);
+        int rowsAffected = preparedStatement.executeUpdate ( );
+        System.out.println ("Deleted " + rowsAffected + " record(s) from " + tableName);
+    }
+
+
+
 
 
 
